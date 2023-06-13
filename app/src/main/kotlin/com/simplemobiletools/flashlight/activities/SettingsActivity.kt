@@ -36,6 +36,7 @@ class SettingsActivity : SimpleActivity() {
         setupStroboscope()
         setupSOS()
         setupForcePortrait()
+        setupEnableImmersive()
         updateTextColors(settings_holder)
 
         arrayOf(settings_color_customization_section_label, settings_general_settings_label).forEach {
@@ -121,6 +122,14 @@ class SettingsActivity : SimpleActivity() {
         settings_force_portrait_holder.setOnClickListener {
             settings_force_portrait.toggle()
             config.forcePortraitMode = settings_force_portrait.isChecked
+        }
+    }
+
+    private fun setupEnableImmersive() {
+        settings_enable_immersive.isChecked = config.enableImmersiveMode
+        settings_enable_immersive_holder.setOnClickListener {
+            settings_enable_immersive.toggle()
+            config.enableImmersiveMode = settings_enable_immersive.isChecked
         }
     }
 }

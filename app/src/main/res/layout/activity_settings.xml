@@ -164,6 +164,21 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/settings_enable_immersive_holder"
+                style="@style/SettingsHolderCheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.simplemobiletools.commons.views.MyAppCompatCheckbox
+                    android:id="@+id/settings_enable_immersive"
+                    style="@style/SettingsCheckboxStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_immersive_mode" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/settings_bright_display_holder"
                 style="@style/SettingsHolderCheckboxStyle"
                 android:layout_width="match_parent"

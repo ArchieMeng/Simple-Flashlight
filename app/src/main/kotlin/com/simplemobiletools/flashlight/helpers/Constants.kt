@@ -10,6 +10,7 @@ const val TOGGLE_WIDGET_UI = "toggle_widget_ui"
 const val STROBOSCOPE_FREQUENCY = "stroboscope_frequency"
 const val STROBOSCOPE_PROGRESS = "stroboscope_progress"
 const val FORCE_PORTRAIT_MODE = "force_portrait_mode"
+const val ENABLE_IMMERSIVE_MODE = "enable_immersive_mode"
 const val SOS = "sos"
 const val BRIGHTNESS_LEVEL = "brightness_level"
 const val MIN_BRIGHTNESS_LEVEL = 1

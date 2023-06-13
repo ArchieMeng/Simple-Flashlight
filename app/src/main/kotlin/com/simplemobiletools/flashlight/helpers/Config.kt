@@ -41,6 +41,11 @@ class Config(context: Context) : BaseConfig(context) {
         get() = prefs.getBoolean(FORCE_PORTRAIT_MODE, true)
         set(forcePortraitMode) = prefs.edit().putBoolean(FORCE_PORTRAIT_MODE, forcePortraitMode).apply()
 
+    var enableImmersiveMode: Boolean
+        get() = prefs.getBoolean(ENABLE_IMMERSIVE_MODE, false)
+        set(enableImmersiveMode) = prefs.edit().putBoolean(ENABLE_IMMERSIVE_MODE, enableImmersiveMode).apply()
+
+
     var brightnessLevel: Int
         get() = prefs.getInt(BRIGHTNESS_LEVEL, DEFAULT_BRIGHTNESS_LEVEL)
         set(brightnessLevel) = prefs.edit().putInt(BRIGHTNESS_LEVEL, brightnessLevel).apply()

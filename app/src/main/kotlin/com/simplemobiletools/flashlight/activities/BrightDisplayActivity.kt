@@ -4,6 +4,9 @@ import android.content.pm.ActivityInfo
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.simplemobiletools.commons.dialogs.ColorPickerDialog
 import com.simplemobiletools.commons.extensions.applyColorFilter
 import com.simplemobiletools.commons.extensions.getContrastColor
@@ -39,6 +42,14 @@ class BrightDisplayActivity : SimpleActivity() {
                 } else {
                     setBackgroundColor(config.brightDisplayColor)
                 }
+            }
+        }
+
+        if (config.enableImmersiveMode) {
+            WindowCompat.getInsetsController(window, window.decorView).apply {
+                systemBarsBehavior =
+                    WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+                hide(WindowInsetsCompat.Type.systemBars())
             }
         }
     }

@@ -10,6 +10,7 @@
     <string name="show_stroboscope">显示频闪仪按钮</string>
     <string name="show_sos">显示紧急求助按钮</string>
     <string name="turn_flashlight_on">启动时打开手电筒</string>
+    <string name="enable_immersive_mode" >开启沉浸模式</string>
     <!--
         Haven't found some strings? There's more at
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
